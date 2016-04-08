@@ -1,0 +1,157 @@
+
+ @font-face { font-family: Blacksmith; src: url('../font/BlackSmith.ttf'); } 
+ @font-face { font-family: Beyno; src: url('../font/BEYNO.otf'); } 
+ @font-face { font-family: Poiret; src: url('../font/PoiretOne-Regular.ttf'); } 
+
+
+html {
+	height: 100vh;
+	position: relative;
+}
+
+body {
+	background-color: black;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-image: url('../images/nebulahalf.png');
+	background-repeat: none;
+	height: 100vh;
+	position: relative;
+}
+
+.brains-holder {
+	position: absolute;
+	left: 50%;
+}
+
+.brains {
+	left: -50%;
+	z-index: -3;
+	height: 70vh;
+	margin-top: 20%;
+	position: relative;
+	/*opacity: .8;*/
+}
+
+.home-welcome {
+	position: absolute;
+	z-index: -1;
+}
+
+.design-text {
+	font-family: Blacksmith, serif;
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 193px);
+	right: 0;
+	margin: 0;
+	padding: 0;
+
+	z-index: 100;
+	height: 150px;
+	overflow: hidden;
+}
+
+.bianca {
+	font-size: 160px;
+	position: relative;
+	top: 0;
+	height: 100px !important;
+}
+
+.bi {
+	font-family: Poiret, serif;
+	font-size: 40px;
+	display: inline-block;
+}
+
+.bianca ::first-letter {
+	font-size: 70px;
+	color: red !important;
+}
+
+ .left-side-text, .right-side-text {
+	height: 100vh;
+	width: 50vh;
+	padding: 0 !important;
+	position: relative;
+}
+
+.right-side{
+	height: 100vh;
+	width: 50vh;
+	position: absolute;
+	/*background-color: black;*/
+	right: 0 !important;
+	z-index: -10;
+}
+
+.right-side-paint img{
+	z-index: -8;
+	opacity: 0.7;
+	width: 100% !important;
+	height: auto;	
+	position: absolute;
+	right: 25%;
+	top: 15%;
+}
+
+.left-side {
+	/*background-color: black;*/
+	z-index: -4;
+	width: 50%;
+	height: 100vh;	
+	position: absolute;
+	left: 0;
+}
+
+.full-home-page {
+	margin-bottom: 0 !important;
+}
+
+.enter-left, .enter-right {
+	position: absolute;
+}
+
+.enter-left {
+	top: 40vh;
+	left: 40%;
+	font-family: Poiret, serif; 
+}
+
+.enter-right-text {
+	font-size: 200px !important;
+}
+
+.welcome-right-text {
+	font-size: 70px !important;
+}
+
+.enter-left-text {
+	font-size: 30px !important;
+}
+
+.enter-right {
+	top: 40vh;
+	right: 40%;
+	font-family: Blacksmith, serif;
+}
+
+.bits-background img {
+	opacity: 0.5;
+	height: 100vh;
+	width: 50vw;
+	left: 0;
+	position: absolute;
+	z-index: -3;
+}
+
+.right-background img {
+	opacity: 0.3;
+	height: 100vh;
+	width: 50vw;
+	right: 0;	
+	position: absolute;
+	z-index: -5;
+}
