@@ -45,6 +45,9 @@ $(document).ready( function() {
 		$('.broward-info').css('opacity', 1);
 	})
 
-
+	$('#submit-button-js').on("click", function(){
+		$(this).preventDefault()
+		console.log("Submitted something!")
+	})
 
 })

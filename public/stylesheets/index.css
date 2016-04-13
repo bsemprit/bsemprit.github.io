@@ -50,8 +50,7 @@
 	height: 100vh;
 	/*margin-top: 8%;*/
 	margin-bottom: 0;
-	border-left: 1px solid purple;
-	border-right: 1px solid purple;
+	padding: 0 5px;
 	/*Fallback to black*/
 	background-color: rgba(0, 0, 0, 0.7);
 	
@@ -185,29 +184,18 @@
 	opacity: 0.3;
 }
 
-.strayer-hover, .ironhack-hover, .broward-hover {
-	position: relative;
-	margin-top: 10px;
-}
 
-.strayer-arrow, .ironhack-arrow, .broward-arrow{
-	width: 30px;
-	/*margin-top: 50px;*/
-}
 
 .strayer-holder, .ironhack-holder, .broward-holder {
 	min-height: 100%;
 }
 
-.strayer-holder:hover .strayer-hover, .ironhack-holder:hover .ironhack-hover, .broward-holder:hover .broward-hover {
-	display: none;
-	/*opacity: 1 !important;*/
-}
 
 .strayer-holder:hover .strayer-info, .ironhack-holder:hover .ironhack-info, .broward-holder:hover .broward-info {
 	display: block;
 	transition: all .3 ease-in;
 }
+
 .learning-top {
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -233,8 +221,7 @@
 .down-arrow {
 	z-index: 11;
 	position: relative;
-	width: 80px;
-	left: 20vw;
+	width: 60px;
 }
 
 .icons-left i{
@@ -323,27 +310,16 @@
 	height: 70px;
 	z-index: 11;
 	position: relative;
-	margin-left: 60px;
 }
 
-/*.javascript{
-	visibility: hidden;
-	position: absolute;
-	font-family: 'Rex';
-}*/
+.javascript{
+	color: white;
 
-.html-left, .ruby-left, .rails-left, .cplusplus-left {
-	margin-left: 30px;
 }
 
-/*.javascript-left:hover .javascript{
-	visibility: visible; 
-	z-index: 12;
-}*/
-
-/*.javascript-left:hover {
-	background-color: rgba(255, 255, 255, 0.1);
-}*/
+.javascript-left, .html-left, .ruby-left, .rails-left, .cplusplus-left, .css-left, .linux-left {
+	width:125px;
+}
 
 .skills-text {
 	font-weight: 100;
@@ -431,25 +407,26 @@ a.final-project-link:visited, a.final-project-link:active  {
 .me-row {
 	background-color: rgba(56, 56, 137, 0.5);
 	position: relative;
+	margin: 0;
 }
 
-.image-holder {
-	background-image: url('../images/cartoonMe.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	/*background-attachment: fixed;*/
-	height: 600px;
-	opacity: 0.6;
-}
 
 .aboutMe {
 	font-size: 20px;
-	margin-top: 80px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .alil {
 	margin-top: 50px;
+}
+
+.right-contact {
+	margin-top: 30px;
+}
+
+.submit-button {
+	background-color: rgba(127, 63, 191, 0.53) !important;
 }
 
 .bottom-icons i{
