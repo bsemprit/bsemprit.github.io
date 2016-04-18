@@ -77,7 +77,7 @@ $(document).ready( function() {
 		console.log("ajax started!")
 		$.ajax({
 			url: "public/php/contact.php",
-			type: "post",
+			type: "get",
 			data: {"action": "send", "nameSubject": nameSubject, "email": email, "message": message},
 			success: function(data, status) {
 				console.log(data + status);

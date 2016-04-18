@@ -1,9 +1,9 @@
 <?php 
  
-	if($_POST['action'] == "send"){
-		$name = $_POST['nameSubject'];
-		$email = $_POST['email'];
-		$message = $_POST['message'];
+	if($_GET['action'] == "send"){
+		$name = $_GET['nameSubject'];
+		$email = $_GET['email'];
+		$message = $_GET['message'];
 		$formcontent="From: $name \n Message: $message";
 		$recipient = "bsemprit@gmail.com";
 		$subject = "Contact from Website";
