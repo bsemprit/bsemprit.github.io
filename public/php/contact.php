@@ -8,7 +8,7 @@
 		$recipient = "bsemprit@gmail.com";
 		$subject = "Contact from Website";
 		$mailheader = "From:" . $email . "\r\n";
-		// mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+		mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 		echo "ok";
 	}
 

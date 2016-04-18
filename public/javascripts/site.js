@@ -74,23 +74,23 @@ $(document).ready( function() {
 
 	function StartSubmitting(){
 		
-		console.log("ajax started!")
-		$.ajax({
-			url: "public/php/contact.php",
-			type: "get",
-			data: {"action": "send", "nameSubject": nameSubject, "email": email, "message": message},
-			success: function(data, status) {
-				console.log(data + status);
+		// console.log("ajax started!")
+		// $.ajax({
+		// 	url: "public/php/contact.php",
+		// 	type: "get",
+		// 	data: {"action": "send", "nameSubject": nameSubject, "email": email, "message": message},
+		// 	success: function(data, status) {
+		// 		console.log(data + status);
 
-				if(data == "ok") {
-			          $('#contact-sent').html('<p class="red-text"><em>Sent email!</em></p>')
-		        }
-			},
-			error: function(response) {
-				console.log(response)
-			}
+		// 		if(data == "ok") {
+		// 	          $('#contact-sent').html('<p class="red-text"><em>Sent email!</em></p>')
+		//         }
+		// 	},
+		// 	error: function(response) {
+		// 		console.log(response)
+		// 	}
 
-		});
+		// });
 	}
 
 })
