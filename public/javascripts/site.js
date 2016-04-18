@@ -46,8 +46,51 @@ $(document).ready( function() {
 	})
 
 	$('#submit-button-js').on("click", function(){
-		$(this).preventDefault()
+		event.preventDefault();
+		var hidden = $('#hidden-field').val();
+		nameSubject = $('#name').val();
+		email = $('#email').val();
+		message = $('#textarea1').val();
 		console.log("Submitted something!")
+
+		console.log("name " + nameSubject + " email " + email+ "message " + message)
+
+		if (hidden !== "0") {
+			console.log("Bot!!");
+		}
+		else if (email == "") {
+			$('#email').after("Please add your email")
+		}
+		else if (nameSubject == "") {
+			$('#name').after("Please add your name or subject")
+		}
+		else if (message == "") {
+			$('#textarea1').after("Please add a message!")
+		}
+		else if (hidden == "0" && nameSubject !== "" && email !== "" && message !== "") {
+			StartSubmitting();
+		}
 	})
+
+	function StartSubmitting(){
+		
+		console.log("ajax started!")
+		$.ajax({
+			url: "public/php/contact.php",
+			type: "post",
+			data: {"action": "send", "nameSubject": nameSubject, "email": email, "message": message},
+			success: function(data, status) {
+				console.log(data + status);
+
+				if(data == "ok") {
+			          $('#contact-sent').html('<p class="red-text"><em>Sent email!</em></p>')
+		        }
+			},
+			error: function(response) {
+				console.log(response)
+			}
+
+		});
+	}
 
 })
