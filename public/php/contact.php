@@ -5,12 +5,10 @@
 		$email = $_POST['email'];
 		$message = $_POST['message'];
 		$formcontent="From: $name \n Message: $message";
-		$recipient = "bianca@biancasemprit.me";
+		$recipient = "bsemprit@gmail.com";
 		$subject = "Contact from Website";
-		$mailheader = "From: $email \r\n";
-		mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+		$mailheader = "From:" . $email . "\r\n";
+		// mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 		echo "ok";
 	}
-	
-?>
 
