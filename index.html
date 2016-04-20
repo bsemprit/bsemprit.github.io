@@ -8,7 +8,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href='https://fonts.googleapis.com/css?family=Cinzel:700|Allura|Tangerine|Poiret+One|Josefin+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Allura|Poiret+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../public/stylesheets/animate.css">
     <link rel="stylesheet" href="../public/stylesheets/normalize.css">
@@ -18,41 +18,40 @@
 <body>
     <main>
         <!-- Nav -->
-        <div class="row nav-bar z-depth-4">
-            <div class="nav-bar-holder">
-                <div class="">
-                    <ul class="list-holder-left ">
-                        <li class="list-item-left home-list">
-                            <a href="#home" class="home-link"><i class="fa fa-home fa-2x"></i> <span class="home-span no-display">Home</span> </a>
-                        </li>
-                        <li class="list-item-left">
-                            <a href="#journey" class="journey-link"><i class="fa fa-map-o fa-lg"></i> <span class="journey-span no-display">My Journey </span> </a>
-                        </li>
-                        <li class="list-item-left">
-                            <a href="#skills" class="skills-link"> <i class="fa fa-code fa-lg"></i> <span class="skills-span no-display">Skills</span> </a>
-                        </li>
-                        <li class="list-item-left">
-                            <a href="#portfolio" class="portfolio-link"> <i class="fa fa-television fa-lg"></i> <span class="portfolio-span no-display">Portfolio</span></a>
-                        </li>
-                        <li class="list-item-left">
-                            <a href="#contact" class="contact-link"> <i class="fa fa-envelope-o fa-lg"></i> <span class="contact-span no-display">Contact me </span> </a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="row nav-bar z-depth-4 hide-on-med-and-down">
+            <div class="nav-bar-holder hide-on-med-and-down">
+                <ul class="list-holder-left hide-on-med-and-down">
+                    <li class="list-item-left">
+                        <a href="#home" class=""><i class="fa fa-home fa-2x"></i> Home </a>
+                    </li>
+                    <li class="list-item-left">
+                        <a href="#journey" class=""><i class="fa fa-map-o fa-lg"></i> <span class="journey-span">My Journey  </a>
+                    </li>
+                    <li class="list-item-left">
+                        <a href="#skills" class=""> <i class="fa fa-code fa-lg"></i>Skills </a>
+                    </li>
+                    <li class="list-item-left">
+                        <a href="#portfolio" class=""> <i class="fa fa-television fa-lg"></i>Portfolio</a>
+                    </li>
+                    <li class="list-item-left">
+                        <a href="#contact" class=""> <i class="fa fa-envelope-o fa-lg"></i>Contact me </a>
+                    </li>
+                </ul>
             </div>
         </div>
+        <!-- End of Nav -->
         <div class="background">
         </div>
         <div class="stars" id="particles-js">
         </div>
         <div class="row first-row" id="home">
-            <div class="col l12 left-top">
+            <div class="col l12 s12 left-top">
                 <div class="left-side-top">
                     <div class="top-text-holder-left row">
-                        <div class="col l12">
-                            <h2 class="white-text flow-text summary-small-left left-align">Hi! I'm Bianca<br>A developer, designer and writer. <br><br> Let's go on a journey...</h2>
+                        <div class="col l12 s12">
+                            <h2 class="white-text flow-text summary-small-left left-align">Hi! I'm Bianca<br>A developer, designer and writer. <br><br><span class="mobile-journey"> Let's go on a journey...</span></h2>
                         </div>
-                        <div class="col l3 m3 s3 down-arrow-holder">
+                        <div class="col l3 m12 s12 down-arrow-holder">
                             <p class="white-text fa-2x icons-left center">
                                 <a href="https://www.github.com/bsemprit" target="_blank"><i class="fa fa-github-alt"></i></a> <a href="www.linkedin.com/in/bsemprit" target="_blank"><i class="fa fa-linkedin-square"></i></a><a href="https://twitter.com/bsemprit" target="_blank"><i class="fa fa-twitter"></i></a> <a href="#contact"><i class="fa fa-envelope"></i></a>
                             </p>
@@ -66,7 +65,7 @@
             </div>
         </div>
         <!-- Resume -->
-        <div class="row second-row">
+        <div class="row second-row hide-on-med-and-down">
             <div class="col l12 s12 m12 left-resume second-row">
                 <div class="row second-row">
                     <div class="col l12 s12 m12 center-align journey-section">
@@ -173,8 +172,8 @@
             </div>
         </div>
         <!-- Skills -->
-        <div class="bottom-image">
-            <div class="row skills-row white-text">
+        <div class="bottom-image ">
+            <div class="row skills-row white-text hide-on-med-and-down">
                 <div class="col l12 m12 s12 left-skills" id="skills">
                     <div class="row skills-row-images">
                         <div class="col push-l3 l8 skills-row-holder">
@@ -217,7 +216,7 @@
                 </div>
             </div>
             <!-- Projects Me and Contacts-->
-            <div class="row bottom">
+            <div class="row bottom hide-on-med-and-down">
                 <!-- Projects-->
                 <div class="row" id="portfolio">
                     <div class="col l12 s12 m12 white-text">
@@ -228,14 +227,14 @@
                             </div>
                         </div>
                         <div class="col l8 s8 m8">
-                            <div class="card purple darken-2 col l7 s7 m7 push-l1 push-s1 push-m1 z-depth-4 project-left-details">
+                            <div class="card col l7 s7 m7 push-l1 push-s1 push-m1 z-depth-4 project-left-details">
                                 <div class="card-content">
                                     <span class="card-title ironhack-details"> Gaming to the Charity</span>
                                     <p class="">Ironhack Final Project - This project allows people to give back without taking money from them. Instead, spend some time sitting gaming while doing good for the world. There is so much we can do at our fingertips, here is another way to feel a little better and game your heart out. </p>
                                 </div>
                                 <div class="card-action">
                                     <p>
-                                        <a href="http://g2charity.co/" target="_blank" class="final-project-link">CLICK HERE</a>
+                                        <a href="http://g2charity.co/" target="_blank" class="final-project-link">CHECK IT OUT HERE</a>
                                     </p>
                                 </div>
                             </div>
@@ -244,7 +243,7 @@
                 </div>
             </div>
             <!-- Me! -->
-            <div class="row me-row white-text">
+            <div class="row me-row white-text hide-on-med-and-down">
                 <div class="me-holder col l12">
                     <div class="col push-l1 push-s1 l9 s9 aboutme-left">
                         <h4 class="alil">A little about me...</h4>
@@ -260,10 +259,10 @@
             </div>
             <!-- Contact -->
             <div class="row black white-text contact-row" id="contact">
-                <div class="col s10 contact-holder">
+                <div class="col l10 s12 m12 contact-holder">
                     <h3 class="center-align">Contact Me</h3>
                     <div class="row">
-                        <div class="col s4 right-contact">
+                        <div class="col l4 s12 m12 right-contact">
                             <p class="contact-text">If you want to get in touch with me for help on a project, offer me a project/job, tell me about a bug or just chat about the day, send me a message!</p>
                             <br>
                             <h5 class="center-align">Email: bianca@biancasemprit.me</h5>
@@ -271,22 +270,32 @@
                                 <a href="https://www.github.com/bsemprit"><i class="fa fa-github-alt"></i></a> <a href="www.linkedin.com/in/bsemprit"><i class="fa fa-linkedin-square"></i></a><a href="https://twitter.com/bsemprit"><i class="fa fa-twitter"></i></a> <a href="#contact"><i class="fa fa-envelope"></i></a>
                             </p>
                         </div>
-                        <form class="col s8 inine" id="contact-form" action="#" method="post">
+                        <form class="col l8 m12 s12 inline" id="contact-form" action="#" method="post">
                             <div class="row">
                                 <p id="contact-sent"></p>
-                                <div class="input-field col s6">
-                                    <input id="email" type="email" name="_replyto" class="validate purple darken-4" placeholder="Something@cool.com">
+                                <div class="input-field col l6 s6 m6">
+                                    <label for="email">Email*</label>
+                                    <br>
+                                    <br>
+                                    <input id="email" type="email" name="_replyto" class="validate purple darken-4">
                                     <p class="red-text empty" id="email-empty"></p>
                                 </div>
-                                <div class="input-field col s6">
-                                    <input id="subject" name="_subject" type="text" placeholder="This is super cool subject" class="purple darken-4">
+                                <div class="input-field col l6 s6 m6">
+                                    <label for="name">Name*</label>
+                                    <br>
+                                    <br>
+                                    <input id="name" name="name" type="text" class="purple darken-4">
+                                    <input id="subject" name="_subject" type="hidden" value="Website Contact!">
                                     <p class="red-text empty" id="subject-empty"></p>
                                     <input type="text" name="_gotcha" id="hidden-field" style="display:none" />
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="input-field col s12">
-                                    <textarea name="message" id="message" type="text" class="materialize-textarea purple darken-4" placeholder="Hello World - Message"></textarea>
+                                <div class="input-field col l12 m12 s12">
+                                    <label for="message">Your Message</label>
+                                    <br>
+                                    <br>
+                                    <textarea name="message" id="message" type="text" class="materialize-textarea purple darken-4"></textarea>
                                     <p class="red-text empty" id="message-empty"></p>
                                 </div>
                             </div>
@@ -299,10 +308,6 @@
                         <!-- form row end -->
                     </div>
                 </div>
-                <!-- <div class="col l5 white-text">
-			<h4>Bianca Semprit</h4>
-			<p>Copyright <i class="fa fa-copyright"></i> 2016 </p>
-		</div> -->
             </div>
         </div>
     </main>

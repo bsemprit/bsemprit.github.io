@@ -1,11 +1,11 @@
- @font-face {
-     font-family: 'Rex';
-     src: url('../public/font/RexBold.otf');
+ html {
+     height: 100%;
  }
  
  body {
      display: flex;
      min-height: 100vh;
+     height: 100%;
      flex-direction: column;
      font-family: "Poiret One", serif;
      background-color: black;
@@ -33,6 +33,16 @@
      height: 100vh;
      position: fixed;
      z-index: 10;
+ }
+ 
+ @media only screen and (max-width: 992px) {
+     .stars canvas,
+     .stars, 
+     .background {
+         width: 100vw !important;
+         height: 100vh !important;
+         overflow: hidden;
+     }
  }
  
  .navbar-fixed {
@@ -113,6 +123,12 @@
      z-index: 11;
      margin-left: 2%;
  }
+
+   @media only screen and (max-width: 992px) {
+  		.quote {
+  			font-size: 20px;
+  		}
+  }
  
  .top-text-holder-left {
      padding-top: 5%;
@@ -173,21 +189,12 @@
  .ironhack-info,
  .broward-info {
      position: relative;
-     /*display: none;*/
-     opacity: 0.3;
  }
  
  .strayer-holder,
  .ironhack-holder,
  .broward-holder {
      min-height: 100%;
- }
- 
- .strayer-holder:hover .strayer-info,
- .ironhack-holder:hover .ironhack-info,
- .broward-holder:hover .broward-info {
-     display: block;
-     transition: all .3 ease-in;
  }
  
  .learning-top {
@@ -208,12 +215,18 @@
      padding-top: 20px;
      width: 100%;
  }
- 
+
  .down-arrow {
-     z-index: 11;
-     position: relative;
-     width: 60px;
- }
+    z-index: 11;
+    position: relative;
+    width: 60px;
+}
+
+@media only screen and (max-width: 992px){
+	.down-arrow {
+		display: none;
+	}
+}
  
  .icons-left i {
      margin-left: 20px;
@@ -235,6 +248,12 @@
      font-weight: 600;
  }
  
+ @media only screen and (max-width: 992px) {
+     .icons-left {
+         left: 0;
+     }
+ }
+ 
  .border-left {
      margin-top: 2vh;
      border: 1px solid rgba(255, 255, 255, 0.2);
@@ -242,11 +261,17 @@
  }
  
  .summary-small-left {
-     /*font-family: 'Rex';*/
      font-size: 40px;
      margin-left: 10%;
      margin-top: 10vh;
      /*background-color: rgba(0,0,0,0.5);*/
+ }
+ 
+ @media only screen and (max-width: 992px) {
+     .summary-small-left {
+         font-size: 20px;
+         margin-top: 10vh;
+     }
  }
  
  .skills-first-row {
@@ -285,7 +310,8 @@
      background-position: cover;
      background-repeat: no-repeat;
      background-attachment: fixed;
-     background-size: 100vw 100vh;
+     /*background-size: 100%;*/
+     min-height: 100%;
  }
  
  .skills-row-holder {
@@ -336,6 +362,13 @@
      position: relative;
      z-index: 11;
      font-size: 20px !important;
+     background-color: rgba(120, 34, 79, 1);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: scroll;
+     background-image: linear-gradient(rgba(120, 34, 79, 1), rgba(120, 34, 79, 0.5)), url('../images/galaxy.jpg');
+     /*opacity: 0.3;*/
  }
  
  .card-action {
