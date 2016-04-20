@@ -37,7 +37,7 @@
  
  @media only screen and (max-width: 992px) {
      .stars canvas,
-     .stars, 
+     .stars,
      .background {
          width: 100vw !important;
          height: 100vh !important;
@@ -108,7 +108,7 @@
      height: 100vh;
      width: 100%;
      margin-left: 0 !important;
-     margin-right: 0 !important; 
+     margin-right: 0 !important;
  }
  
  .left-side-top {
@@ -125,28 +125,28 @@
  }
  
  .quote-arrow-holder {
- 	position: absolute;
- 	bottom: 0;
+     position: absolute;
+     bottom: 0;
  }
-
-   @media only screen and (max-width: 992px) {
-  		.quote {
-  			font-size: 1.5em;
-  		}
-  }
+ 
+ @media only screen and (max-width: 992px) {
+     .quote {
+         font-size: 1.5em;
+     }
+ }
  
  .top-text-holder-left {
      padding-top: 5%;
      min-height: 80%;
      position: relative;
  }
-
+ 
  @media only screen and (max-width: 992px) {
- 	 .top-text-holder-left {
-     padding-top: 5%;
-     min-height: 70%;
-     position: relative;
- }
+     .top-text-holder-left {
+         padding-top: 5%;
+         min-height: 70%;
+         position: relative;
+     }
  }
  
  .second-row {
@@ -228,22 +228,21 @@
      padding-top: 20px;
      width: 100%;
  }
-
+ 
  .down-arrow {
-    z-index: 11;
-    position: relative;
-    width: 60px;
-}
-
-@media only screen and (max-width: 992px){
-	.down-arrow {
-		width: 30%;
-	}
-
-	.down-arrow-holder {
-		padding-top: 5%;
-	}
-}
+     z-index: 11;
+     position: relative;
+     width: 60px;
+ }
+ 
+ @media only screen and (max-width: 992px) {
+     .down-arrow {
+         width: 30%;
+     }
+     .down-arrow-holder {
+         padding-top: 5%;
+     }
+ }
  
  .icons-left i {
      margin-left: 20px;
@@ -303,6 +302,12 @@
      height: 50vh;
  }
  
+ @media only screen and (max-width: 992px) {
+     .left-skills {
+         height: auto;
+     }
+ }
+ 
  .skills-row {
      position: relative;
      margin-bottom: 0;
@@ -321,31 +326,51 @@
      height: 40vh;
  }
  
+ @media only screen and (max-width: 992px) {
+     .skills-row-images {
+         padding-top: 50%;
+         height: auto;
+     }
+ }
+ 
  .bottom-image {
      background-color: rgba(63, 80, 165, 0.5);
      background-image: url('../images/galaxy.jpg');
      background-position: cover;
      background-repeat: no-repeat;
      background-attachment: fixed;
-     
      min-height: 100%;
  }
-
-  @media only screen and (max-width: 992px) {
-  	.bottom-image {
-  		background-size: auto 100vh;
-  	}
-  }
+ 
+ @media only screen and (max-width: 992px) {
+     .bottom-image {
+         background-size: auto 100vh;
+     }
+ }
  
  .skills-row-holder {
      position: relative;
      /*background-color: rgba(63,80,165, 0.5);*/
+ }
+
+ @media only screen and (max-width: 992px) {
+     .skills-row-holder {
+         height: auto;
+         width: auto;
+         padding-left: 10% !important;
+     }
  }
  
  .skills-image {
      height: 70px;
      z-index: 11;
      position: relative;
+ }
+ 
+ @media only screen and (max-width: 992px) {
+     .skills-image {
+         height: 15vh;
+     }
  }
  
  .javascript {
@@ -362,12 +387,51 @@
      width: 125px;
  }
  
+ @media only screen and (max-width: 992px) {
+     .javascript-left,
+     .html-left,
+     .ruby-left,
+     .rails-left,
+     .cplusplus-left,
+     .css-left,
+     .linux-left {
+         margin-top: 5vh;
+         min-width: 25vw;
+         width: auto;
+         height: auto;
+     }
+     .linux-c-holder {
+     	display: inline;
+     }
+ }
+
+ .skills-text-mobile {
+ 	display: none;
+ }
+ 
  .skills-text {
      font-weight: 100;
      font-size: 24px;
      font-family: "Poiret One", Roboto;
      padding-left: 100px;
      margin-top: 60px;
+ }
+ 
+ @media only screen and (max-width: 992px) {
+	.skills-text {
+		display: none;
+	}
+
+	.skills-text-mobile {
+         padding-left: 0;
+         text-align: center;
+		display: block;
+	}
+
+     .skills-text-mobile h3{
+         font-size: 2em !important;
+         margin-top: auto;
+     }
  }
  
  .inline {
@@ -378,14 +442,14 @@
      position: relative;
      margin-top: 10%;
  }
-
- @media only screen and (max-width: 992px ) {
- 	.portfolio-text {
- 		font-size: 4em;
- 		margin-left: auto;
- 		margin-right: auto;
- 		width: 50%;
- 	}
+ 
+ @media only screen and (max-width: 992px) {
+     .portfolio-text {
+         font-size: 4em;
+         margin-left: auto;
+         margin-right: auto;
+         width: 50%;
+     }
  }
  
  .project-left-details {
@@ -402,12 +466,12 @@
      background-image: linear-gradient(rgba(120, 34, 79, 1), rgba(120, 34, 79, 0.5)), url('../images/galaxy.jpg');
      /*opacity: 0.3;*/
  }
-
-  @media only screen and (max-width: 992px ) {
-	 .project-left-details {
- 		font-size: 1em !important;
- 		margin-top: 10%;
- 	}
+ 
+ @media only screen and (max-width: 992px) {
+     .project-left-details {
+         font-size: 1em !important;
+         margin-top: 10%;
+     }
  }
  
  .card-action {
@@ -417,12 +481,12 @@
  .ironhack-details {
      font-size: 35px !important;
  }
-
-  @media only screen and (max-width: 992px ) {
-  	 .ironhack-details {
-     font-size: 1.4em !important;
-		 }
-  }
+ 
+ @media only screen and (max-width: 992px) {
+     .ironhack-details {
+         font-size: 1.4em !important;
+     }
+ }
  
  a.final-project-link {
      color: deepskyblue !important;
@@ -444,16 +508,16 @@
      width: 400px;
      height: 200px;
  }
-
-  @media only screen and (max-width: 992px) {
-  	.macbook {
-  		top: auto;
-  		left: auto;
-  		width: 100%;
-  		height: auto;
-  		margin: auto;
-  	}
-  }
+ 
+ @media only screen and (max-width: 992px) {
+     .macbook {
+         top: auto;
+         left: auto;
+         width: 100%;
+         height: auto;
+         margin: auto;
+     }
+ }
  
  .enter-row {
      margin-top: 20%;
