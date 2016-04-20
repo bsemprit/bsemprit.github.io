@@ -107,6 +107,8 @@
      /*z-index: 5;*/
      height: 100vh;
      width: 100%;
+     margin-left: 0 !important;
+     margin-right: 0 !important; 
  }
  
  .left-side-top {
@@ -118,15 +120,18 @@
  .quote {
      font-family: "Allura", serif;
      position: relative;
-     bottom: 0;
-     left: 0;
      z-index: 11;
      margin-left: 2%;
+ }
+ 
+ .quote-arrow-holder {
+ 	position: absolute;
+ 	bottom: 0;
  }
 
    @media only screen and (max-width: 992px) {
   		.quote {
-  			font-size: 20px;
+  			font-size: 1.5em;
   		}
   }
  
@@ -134,6 +139,14 @@
      padding-top: 5%;
      min-height: 80%;
      position: relative;
+ }
+
+ @media only screen and (max-width: 992px) {
+ 	 .top-text-holder-left {
+     padding-top: 5%;
+     min-height: 70%;
+     position: relative;
+ }
  }
  
  .second-row {
@@ -224,7 +237,11 @@
 
 @media only screen and (max-width: 992px){
 	.down-arrow {
-		display: none;
+		width: 30%;
+	}
+
+	.down-arrow-holder {
+		padding-top: 5%;
 	}
 }
  
@@ -269,7 +286,7 @@
  
  @media only screen and (max-width: 992px) {
      .summary-small-left {
-         font-size: 20px;
+         font-size: 2em;
          margin-top: 10vh;
      }
  }
@@ -310,9 +327,15 @@
      background-position: cover;
      background-repeat: no-repeat;
      background-attachment: fixed;
-     /*background-size: 100%;*/
+     
      min-height: 100%;
  }
+
+  @media only screen and (max-width: 992px) {
+  	.bottom-image {
+  		background-size: auto 100vh;
+  	}
+  }
  
  .skills-row-holder {
      position: relative;
@@ -355,6 +378,15 @@
      position: relative;
      margin-top: 10%;
  }
+
+ @media only screen and (max-width: 992px ) {
+ 	.portfolio-text {
+ 		font-size: 4em;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		width: 50%;
+ 	}
+ }
  
  .project-left-details {
      margin-top: 25%;
@@ -370,6 +402,13 @@
      background-image: linear-gradient(rgba(120, 34, 79, 1), rgba(120, 34, 79, 0.5)), url('../images/galaxy.jpg');
      /*opacity: 0.3;*/
  }
+
+  @media only screen and (max-width: 992px ) {
+	 .project-left-details {
+ 		font-size: 1em !important;
+ 		margin-top: 10%;
+ 	}
+ }
  
  .card-action {
      padding: 5px !important;
@@ -378,6 +417,12 @@
  .ironhack-details {
      font-size: 35px !important;
  }
+
+  @media only screen and (max-width: 992px ) {
+  	 .ironhack-details {
+     font-size: 1.4em !important;
+		 }
+  }
  
  a.final-project-link {
      color: deepskyblue !important;
@@ -399,6 +444,16 @@
      width: 400px;
      height: 200px;
  }
+
+  @media only screen and (max-width: 992px) {
+  	.macbook {
+  		top: auto;
+  		left: auto;
+  		width: 100%;
+  		height: auto;
+  		margin: auto;
+  	}
+  }
  
  .enter-row {
      margin-top: 20%;
