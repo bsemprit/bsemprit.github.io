@@ -166,6 +166,19 @@
      margin: 0;
  }
  
+ @media only screen and (max-width: 992px) {
+     .left-resume {
+         position: relative;
+         background-color: #1C1C1C;
+         background-image: url('../images/blurred-abstract.jpg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
+         margin: 0;
+     }
+ }
+ 
  .parts-resume-left {
      font-family: 'Poiret One';
      font-size: 18px;
@@ -184,6 +197,16 @@
      padding-top: 10vh !important;
  }
  
+ @media only screen and (max-width: 992px) {
+     .journey-section {
+         background-image: url('../images/journeymove.jpg');
+         background-position: contain;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
+     }
+ }
+ 
  .ironhack-resume-left {
      background-color: rgba(0, 0, 0, 0.7);
      position: relative;
@@ -192,10 +215,21 @@
      padding-top: 50px;
  }
  
+ @media only screen and (max-width: 992px) {
+     .ironhack-resume-left {
+         background-color: rgba(0, 0, 0, 0.7);
+         position: relative;
+         z-index: 11;
+         height: auto;
+         padding-top: 50px;
+     }
+ }
+ 
  .strayer-text,
  .ironhack-text,
  .broward-text {
      position: relative;
+     text-align: center;
  }
  
  .strayer-info,
@@ -208,6 +242,27 @@
  .ironhack-holder,
  .broward-holder {
      min-height: 100%;
+ }
+ 
+ @media only screen and (max-width: 600px) {
+     .strayer-text,
+     .ironhack-text,
+     .broward-text {
+         position: relative;
+         text-align: left;
+     }
+
+     .ironhack-holder,
+     .broward-holder {
+         margin-top: 10%;
+     }
+ }
+
+ @media only screen and (max-width: 992px, min-width: 600px) {
+ 	.ironhack-holder,
+     .broward-holder {
+         margin-top: 0;
+     }
  }
  
  .learning-top {
@@ -352,7 +407,7 @@
      position: relative;
      /*background-color: rgba(63,80,165, 0.5);*/
  }
-
+ 
  @media only screen and (max-width: 992px) {
      .skills-row-holder {
          height: auto;
@@ -401,12 +456,12 @@
          height: auto;
      }
      .linux-c-holder {
-     	display: inline;
+         display: inline;
      }
  }
-
+ 
  .skills-text-mobile {
- 	display: none;
+     display: none;
  }
  
  .skills-text {
@@ -418,17 +473,15 @@
  }
  
  @media only screen and (max-width: 992px) {
-	.skills-text {
-		display: none;
-	}
-
-	.skills-text-mobile {
+     .skills-text {
+         display: none;
+     }
+     .skills-text-mobile {
          padding-left: 0;
          text-align: center;
-		display: block;
-	}
-
-     .skills-text-mobile h3{
+         display: block;
+     }
+     .skills-text-mobile h3 {
          font-size: 2em !important;
          margin-top: auto;
      }
