@@ -379,9 +379,12 @@
  .bottom-image {
      background-color: rgba(63, 80, 165, 0.5);
      background-image: url('../images/galaxyOptimizedWeb.jpg');
-     background-position: cover;
+     background-position: center;
      background-repeat: no-repeat;
      background-attachment: fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
      background-size: cover;
      /*min-height: 100%;*/
  }
