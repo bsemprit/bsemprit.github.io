@@ -2,9 +2,9 @@ $(document).ready(function() {
 
 
     console.log("start")
+    $('.parallax').parallax();
 
-    $(".welcome-left-text").hide();
-    $(".welcome-right-text").hide();
+    
 
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
     particlesJS.load('particles-js', '../public/javascripts/particles.json', function() {

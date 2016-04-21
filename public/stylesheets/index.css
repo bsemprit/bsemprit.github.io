@@ -15,7 +15,20 @@
      flex: 1 0 auto;
  }
  
- .background {
+ .background:before {
+     content: "";
+     display: block;
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     background: url('../images/galaxyGirlOptimizedWeb.jpg') no-repeat center center;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     z-index: -10;
+      }
+ /* .background {
      z-index: 0;
      width: 100%;
      height: 100vh;
@@ -26,7 +39,7 @@
      background-size: cover;
      background-attachment: fixed;
      background-repeat: no-repeat;
- }
+ }*/
  
  .stars {
      width: 100%;
@@ -158,24 +171,20 @@
  .left-resume {
      position: relative;
      background-color: #1C1C1C;
-     background-image: url('../images/blurredAbstractOptimizedWeb.jpg');
-     background-position: center;
-     background-repeat: no-repeat;
+      background: url('../images/blurredAbstractOptimizedWeb.jpg') no-repeat center center;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
      background-attachment: fixed;
-     background-size: 100%;
      margin: 0;
+     z-index: 10;
+     /*height: 100vh;*/
  }
  
  @media only screen and (max-width: 992px) {
      .left-resume {
-         position: relative;
-         background-color: #1C1C1C;
          background-image: url('../images/blurredAbstractOptimizedWeb.jpg');
-         background-position: center;
-         background-repeat: no-repeat;
-         background-attachment: fixed;
-         background-size: cover;
-         margin: 0;
      }
  }
  
@@ -184,6 +193,8 @@
      font-size: 18px;
      position: relative;
      margin-bottom: 0;
+     height: auto;
+     min-height: 100vh;
  }
  
  .journey-section {
@@ -201,9 +212,6 @@
      .journey-section {
          background-image: url('../images/journeyOptimizedWeb.jpg');
          background-position: contain;
-         background-repeat: no-repeat;
-         background-attachment: fixed;
-         background-size: cover;
      }
  }
  
@@ -217,11 +225,7 @@
  
  @media only screen and (max-width: 992px) {
      .ironhack-resume-left {
-         background-color: rgba(0, 0, 0, 0.7);
-         position: relative;
-         z-index: 11;
          height: auto;
-         padding-top: 50px;
      }
  }
  
@@ -248,18 +252,17 @@
      .strayer-text,
      .ironhack-text,
      .broward-text {
-         position: relative;
          text-align: left;
      }
-
      .ironhack-holder,
      .broward-holder {
          margin-top: 10%;
      }
  }
-
- @media only screen and (max-width: 992px, min-width: 600px) {
- 	.ironhack-holder,
+ 
+ @media only screen and (max-width: 992px,
+ min-width: 600px) {
+     .ironhack-holder,
      .broward-holder {
          margin-top: 0;
      }
@@ -325,10 +328,8 @@
      }
  }
  
- .border-left {
-     margin-top: 2vh;
-     border: 1px solid rgba(255, 255, 255, 0.2);
-     height: 95vh;
+ .brain {
+     margin: 10% 0;
  }
  
  .summary-small-left {
@@ -367,7 +368,7 @@
      position: relative;
      margin-bottom: 0;
      margin-top: 0;
-     padding-top: 30px;
+     padding-top: 10%;
  }
  
  .skills-row-images {
@@ -556,6 +557,7 @@
  }
  
  .macbook {
+     margin-top: 10%;
      position: relative;
      top: 50%;
      left: 10%;
