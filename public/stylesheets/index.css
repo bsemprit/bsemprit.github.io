@@ -21,7 +21,7 @@
      height: 100vh;
      position: absolute;
      background-color: black;
-     background-image: url('../images/galaxygirl.jpg');
+     background-image: url('../images/galaxyGirlOptimizedWeb.jpg');
      background-position: center;
      background-size: cover;
      background-attachment: fixed;
@@ -158,7 +158,7 @@
  .left-resume {
      position: relative;
      background-color: #1C1C1C;
-     background-image: url('../images/blurred-abstract.jpg');
+     background-image: url('../images/blurredAbstractOptimizedWeb.jpg');
      background-position: center;
      background-repeat: no-repeat;
      background-attachment: fixed;
@@ -170,7 +170,7 @@
      .left-resume {
          position: relative;
          background-color: #1C1C1C;
-         background-image: url('../images/blurred-abstract.jpg');
+         background-image: url('../images/blurredAbstractOptimizedWeb.jpg');
          background-position: center;
          background-repeat: no-repeat;
          background-attachment: fixed;
@@ -188,18 +188,18 @@
  
  .journey-section {
      background-color: black;
-     background-image: url('../images/journeymove.jpg');
+     background-image: url('../images/journeyOptimizedWeb.jpg');
      background-position: bottom;
      background-repeat: no-repeat;
      background-attachment: fixed;
-     background-size: 100%;
+     background-size: cover;
      height: 40vh;
      padding-top: 10vh !important;
  }
  
  @media only screen and (max-width: 992px) {
      .journey-section {
-         background-image: url('../images/journeymove.jpg');
+         background-image: url('../images/journeyOptimizedWeb.jpg');
          background-position: contain;
          background-repeat: no-repeat;
          background-attachment: fixed;
@@ -373,7 +373,7 @@
  .skills-row-images {
      position: relative;
      padding-top: 100px;
-     background-image: url('../images/laptopskillsmultiple.png');
+     background-image: url('../images/LaptopSkillsOptimizedWeb.png');
      background-position: top;
      background-repeat: no-repeat;
      background-size: contain;
@@ -390,10 +390,11 @@
  
  .bottom-image {
      background-color: rgba(63, 80, 165, 0.5);
-     background-image: url('../images/galaxy.jpg');
+     background-image: url('../images/galaxyOptimizedWeb.jpg');
      background-position: cover;
      background-repeat: no-repeat;
      background-attachment: fixed;
+     background-size: cover;
      min-height: 100%;
  }
  
