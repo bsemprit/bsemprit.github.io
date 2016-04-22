@@ -2,9 +2,8 @@ $(document).ready(function() {
 
 
     console.log("start")
-    $('.parallax').parallax();
 
-    
+
 
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
     particlesJS.load('particles-js', '../public/javascripts/particles.json', function() {
