@@ -166,7 +166,7 @@
      background-size: cover;
      background-attachment: fixed;
      margin: 0;
-     z-index: 10;
+     /*z-index: 10;*/
      /*height: 100vh;*/
  }
  
