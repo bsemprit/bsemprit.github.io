@@ -58,19 +58,10 @@
      width: 150px;
      min-width: 50px;
      height: 100vh;
-     /*margin-top: 8%;*/
      margin-bottom: 0;
      padding: 0 5px;
-     /*Fallback to black*/
+
      background-color: rgba(0, 0, 0, 0.7);
-     /* Safari 5.1, Chrome 10+ */
-     /*background: -webkit-linear-gradient(top,  rgba(85, 103, 237, 0.7), rgba(0, 0, 0, 0.7));*/
-     /* Firefox 3.6+ */
-     background: -moz-linear-gradient(top, rgba(85, 103, 237, 0.7), rgba(0, 0, 0, 0.7));
-     /* IE 10 */
-     background: -ms-linear-gradient(top, rgba(85, 103, 237, 0.7), rgba(0, 0, 0, 0.7));
-     /* Opera 11.10+ */
-     background: -o-linear-gradient(top, rgba(85, 103, 237, 0.7), rgba(0, 0, 0, 0.7));
      padding-bottom: 20px;
  }
  
@@ -166,8 +157,6 @@
      background-size: cover;
      background-attachment: fixed;
      margin: 0;
-     /*z-index: 10;*/
-     /*height: 100vh;*/
  }
  
  @media only screen and (max-width: 992px) {
@@ -324,7 +313,6 @@
      font-size: 40px;
      margin-left: 10%;
      margin-top: 10vh;
-     /*background-color: rgba(0,0,0,0.5);*/
  }
  
  @media only screen and (max-width: 992px) {
@@ -387,19 +375,11 @@
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
-     /*min-height: 100%;*/
  }
  
- @media only screen and (max-width: 992px) {
-     .bottom-image {
-         /*background-size: cover;*/
-         /*height: auto;*/
-     }
- }
  
  .skills-row-holder {
      position: relative;
-     /*background-color: rgba(63,80,165, 0.5);*/
  }
  
  @media only screen and (max-width: 992px) {
@@ -628,8 +608,6 @@
  .bottom-icons {
      z-index: 20;
      position: relative;
-     /*left: 100px;*/
-     /* 	width: 50%;*/
  }
  
  .bottom-icons a {
