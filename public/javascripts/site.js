@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     console.log("start")
 
-
+    $(".clickable").on("click", coolSlider)
 
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
     particlesJS.load('particles-js', '../public/javascripts/particles.json', function() {
@@ -54,3 +54,14 @@ $(document).ready(function() {
     }
 
 })
+
+
+function coolSlider(event) {
+        event.preventDefault();
+        var link = event.currentTarget
+        var goingSomeplace = $(link).attr('href')
+
+        $('html, body').animate({
+            scrollTop: $(goingSomeplace).offset().top
+        }, 1000);
+}
