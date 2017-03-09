@@ -236,8 +236,7 @@
      }
  }
  
- @media only screen and (max-width: 992px,
- min-width: 600px) {
+ @media only screen and (max-width: 992px) and (min-width: 600px) {
      .ironhack-holder,
      .broward-holder {
          margin-top: 0;
@@ -410,7 +409,8 @@
  .rails-left,
  .cplusplus-left,
  .css-left,
- .linux-left {
+ .linux-left,
+ .react-left {
      width: 125px;
  }
  
@@ -421,7 +421,8 @@
      .rails-left,
      .cplusplus-left,
      .css-left,
-     .linux-left {
+     .linux-left,
+     .react-left {
          margin-top: 5vh;
          min-width: 25vw;
          width: auto;
@@ -441,7 +442,7 @@
      font-size: 24px;
      font-family: "Poiret One", Roboto;
      padding-left: 100px;
-     margin-top: 60px;
+     margin-top: 25px;
  }
  
  @media only screen and (max-width: 992px) {
