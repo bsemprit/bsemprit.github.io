@@ -195,7 +195,6 @@
      background-color: rgba(0, 0, 0, 0.7);
      position: relative;
      z-index: 11;
-     height: 300px;
      padding-top: 50px;
  }
  
@@ -347,7 +346,7 @@
  
  .skills-row-images {
      position: relative;
-     padding-top: 100px;
+     padding-top: 4em;
      background-image: url('../images/LaptopSkillsOptimizedWeb.png');
      background-position: top;
      background-repeat: no-repeat;
@@ -403,32 +402,18 @@
      color: white;
  }
  
- .javascript-left,
- .html-left,
- .ruby-left,
- .rails-left,
- .cplusplus-left,
- .css-left,
- .linux-left,
- .react-left {
+ .images {
      width: 125px;
  }
  
  @media only screen and (max-width: 992px) {
-     .javascript-left,
-     .html-left,
-     .ruby-left,
-     .rails-left,
-     .cplusplus-left,
-     .css-left,
-     .linux-left,
-     .react-left {
+     .images {
          margin-top: 5vh;
          min-width: 25vw;
          width: auto;
          height: auto;
      }
-     .linux-c-holder {
+     .holder {
          display: inline;
      }
  }
