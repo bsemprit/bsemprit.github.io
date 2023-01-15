@@ -347,10 +347,6 @@
  .skills-row-images {
      position: relative;
      padding-top: 4em;
-     background-image: url('../images/LaptopSkillsOptimizedWeb.png');
-     background-position: top;
-     background-repeat: no-repeat;
-     background-size: contain;
      min-height: 600px;
      height: 40vh;
  }
@@ -364,7 +360,7 @@
  
  .bottom-image {
      background-color: rgba(63, 80, 165, 0.5);
-     background-image: url('../images/grandcanyon.JPG');
+     background-image: url('../images/galaxyOptimizedWeb.jpg');
      background-position: center;
      background-repeat: no-repeat;
      background-attachment: fixed;
@@ -544,7 +540,7 @@
      z-index: 11;
      margin-bottom: 0;
      background-color: black;
-     background-image: url('../images/nebulahalf.png');
+     background-image: url('../images/nebula.png');
      background-position: bottom;
      background-repeat: no-repeat;
      background-attachment: fixed;
