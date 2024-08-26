@@ -596,3 +596,8 @@
  .bottom-icons a {
      color: white !important;
  }
+
+ .card-footer > img {
+    width: 300px;
+    height: 300px;
+ }
