@@ -155,7 +155,7 @@
  
  @media only screen and (max-width: 992px) {
      .left-resume {
-         background-image: url('..\images\blueocean.jpg');
+         background-image: url('../images/blueocean.jpg');
      }
  }
  
