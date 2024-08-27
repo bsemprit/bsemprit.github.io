@@ -30,6 +30,16 @@
      margin-bottom: 0 !important;
      position: relative;
  }
+ @media only screen and (max-width: 992px) {
+    .first-row,
+    .left-resume,
+    .journey-section,
+    .contact-row,
+    .contact-holder {
+        background-attachment: scroll;
+     }
+ }
+
  
  .stars {
      width: 100%;
@@ -183,6 +193,7 @@
      .journey-section {
          background-image: url('../images/journeyOptimizedWeb.jpg');
          background-position: contain;
+         background-attachment: scroll;
      }
  }
  
